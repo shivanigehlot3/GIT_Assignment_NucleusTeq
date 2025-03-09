@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+       
+        <div class="start-screen" id="start-screen">
+            <h2>Select Quiz Category</h2>
+            <select id="category">
+                <option value="9">General Knowledge</option>
+                <option value="18">Science: Computers</option>
+                <option value="23">History</option>
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="24">Politics</option>
+                <option value="27">Animals</option>
+                <option value="31">Anime & Manga</option>
+            </select>
+
+            <h2>Select Difficulty Level</h2>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        
+        <div class="quiz-box" id="quiz" style="display: none;">
+            <div class="question-count">
+                <p class="count">
+                    <span id="count-question">1</span> <strong id="tot-num-ques"> / 10</strong>
+                </p>
+            </div>
+
+            <div class="question-box">
+                <span id="question-number">1</span>
+                <p id="question">Loading question...</p>
+            </div>
+
+            <div class="answer-box">
+                <div class="box">
+                    <div class="answer-number">A</div>
+                    <input type="radio" name="option" id="first" value="a" required hidden>
+                    <label for="first" class="answer-lable">Option A</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">B</div>
+                    <input type="radio" name="option" id="second" value="b" required hidden>
+                    <label for="second" class="answer-lable">Option B</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">C</div>
+                    <input type="radio" name="option" id="third" value="c" required hidden>
+                    <label for="third" class="answer-lable">Option C</label>
+                </div>
+
+                <div class="box">
+                    <div class="answer-number">D</div>
+                    <input type="radio" name="option" id="fourth" value="d" required hidden>
+                    <label for="fourth" class="answer-lable">Option D</label>
+                </div>
+            </div>
+
+            <div class="timer">
+                <p id="timer">Time Left : 15 seconds</p>
+            </div>
+
+            <div class="button-box">
+                <button type="button" id="next-question-btn">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
