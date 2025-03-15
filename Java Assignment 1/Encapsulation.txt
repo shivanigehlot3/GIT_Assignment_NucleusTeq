@@ -1,0 +1,46 @@
+---- Explain the concept of encapsulation with a suitable example. ----
+
+Enacapsulation: 
+
+Encapsulatin is a fundamental object-oriented programming principle in java.
+Encapsulation is the process of wrapping data (variables) and code (methods) together into a single unit, usually a class.
+Encapsulation makes sure that the sensitive data is hidden from the users.
+We make the class variables or attributes as private. To access these attributes, we use getter and setter methods.
+
+Example : 
+class Student {
+    private String name;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+            this.age = age;
+    }
+}
+
+public class Encapsulation {
+    public static void main(String[] args) {
+        Student student = new Student();
+
+        student.setName("John");
+        student.setAge(20);
+
+        System.out.println("Name: " + student.getName());
+        System.out.println("Age: " + student.getAge());
+    }
+}
+
+
+Here, as we declare the name and age variable as private, we cannot directly access these variables simply by using ---> student.name or student.age. We have to use getName() and getAge() method.
+Also we cannot update their values directly by using ---> student.name="Shivani" or student.age=22. We have to use setName() or setAge() method to update them.

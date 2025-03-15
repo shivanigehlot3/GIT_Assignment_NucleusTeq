@@ -1,0 +1,41 @@
+---- 1) Explain the difference between primitive and reference data types with examples. ----
+
+ Primitive Data Types:
+
+ Primitive data types represent simple values directly stored in memory. The name of the variable tells the memory location where its value is stored.
+ Memory allocation for primitive data type is done in stack.
+ Comparisons (==) compare values directly.
+ Java has 8 primitive types:
+
+  boolean: Boolean represents a truth value: either true or false .
+  byte: A byte containing 8 bits, its value ranges between the values -128 and 127.
+  char: A 16-bit value representing a single character.
+  short: A 16-bit value that represents a small integer, between the values -32768 and 32767. 
+  int: A 32-bit value that represents a medium-sized integer, between the values -2^31 and 2^31 - 1. 
+  long: A 64-bit value that represents a large integer, between values -2^63 and 2^63 - 1. 
+  float: A floating-point number that uses 32 bits. Its default value is 0.0f. 
+  double: A floating-point number that uses 64 bits. Its default value is 0.0d.
+	
+ 	int age = 25; // Integer type
+        double ht = 5.7; // Floating-point type
+        char ch = 'A'; // Character type
+        boolean isPass = true; // Boolean type
+
+
+ Reference Data Types:
+
+ Any type of data other than primitive data types is known as reference data types. In java, programmer is free to create their own variable types by defining new classes. Any object instanced from a class is a reference variable. These hold references (addresses) to objects in memory rather than the actual data.
+ Objects are stored in heap, and references are stored in the stack.
+ Comparisons (==) check if references point to the same object or not.
+
+ Example of reference data types are: Classes, Interfaces, Arrays, Strings.
+
+ class Student {
+     String name;
+     int age;
+    
+     Student(String name, int age) {
+         this.name = name;
+         this.age = age;
+     }
+ }
