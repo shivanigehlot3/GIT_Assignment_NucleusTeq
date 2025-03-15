@@ -1,0 +1,22 @@
+---- Explain the concept of interfaces and abstract classes with examples. ----
+
+Interfaces:
+
+Interface is a blueprint of a class.
+All methods in interface are public, abstract and without any implementation. They must be implemented by the class that implements the interface.
+Interface is used to achieve total abstraction.
+Varibles in the interface are final, public and static by default.
+Interface cannot have constructors as it cannot instantiated.
+Multiple Inheritance is achieved using interfaces as a class can implement multiple interfaces.
+
+Example for interface : InterfaceConcept.java  (code is in this file).
+
+
+Abstract Classes: 
+
+Abstract class can contain both abstract method as well as concrete methods with implementation.
+WE cannot create an instance of abstract class.
+Abstract class can have constructors. 
+Even though we can’t instantiate an abstract class directly, its constructor is called when a subclass object is created.
+
+Example for Abstract Class : AbstractClassConcept.java (code is in this file).
