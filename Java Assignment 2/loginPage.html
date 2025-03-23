@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+  <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+  <div class="login_form">
+    <form action="employeeTable.html">
+      <h3>HR Log In</h3>
+      <div class="input_box">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email address" required />
+      </div>
+      <div class="input_box">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+
+  <!-- Custom Popup -->
+<div id="custom-popup" class="popup">
+  <div class="popup-content">
+      <p id="popup-message"></p>
+      <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+
+  <script src="login.js"></script>
+</body>
+</html>
